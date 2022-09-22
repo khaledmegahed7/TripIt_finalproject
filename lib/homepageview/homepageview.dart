@@ -20,7 +20,7 @@ class _HomePageViewState extends State<HomePageView> {
     Locations(),
     Favourite(),
     Gifts(),
-    Tours(),
+    ToursScreen(),
     Profile(),
   ];
   final items = <Widget>[
