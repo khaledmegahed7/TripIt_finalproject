@@ -8,6 +8,7 @@ import 'package:http/http.dart';
 
 import 'custom_color/customcolor.dart';
 
+
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
   @override
@@ -50,10 +51,10 @@ class _SignInState extends State<SignIn> {
               Stack(
                 children: [
                   Container(
-                      margin: EdgeInsets.only(left: 20, right: 20),
+                      margin: EdgeInsets.only(left: 20, right: 10),
                       child: Image.asset("assets/images/BGsingin.png")),
                   Container(
-                    margin: EdgeInsets.only(left: 35, right: 35),
+                    margin: EdgeInsets.only(left: 35, right: 50),
                     child: Form(
                       key: forfieldmkey,
                       child: Column(

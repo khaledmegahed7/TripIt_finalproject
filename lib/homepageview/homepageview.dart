@@ -2,10 +2,10 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:finalproject/homepageview/profile.dart';
 import 'package:finalproject/homepageview/tours.dart';
 import 'package:flutter/material.dart';
-
+import 'locations.dart';
 import 'favourite.dart';
 import 'giftpage.dart';
-import 'locations.dart';
+
 class HomePageView extends StatefulWidget {
   const HomePageView({Key? key}) : super(key: key);
 
@@ -15,7 +15,7 @@ class HomePageView extends StatefulWidget {
 
 class _HomePageViewState extends State<HomePageView> {
   final navigationkey = GlobalKey<CurvedNavigationBarState>();
-  int index = 2;
+  int index = 0;
   final screens = [
     Locations(),
     Favourite(),

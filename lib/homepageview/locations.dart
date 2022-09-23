@@ -1,6 +1,7 @@
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:finalproject/homepageview/profile.dart';
+import 'package:finalproject/homepageview/tours.dart';
 
 import 'package:flutter/material.dart';
 class Locations extends StatefulWidget {
@@ -80,7 +81,18 @@ class _LocationsState extends State<Locations> {
                       padding: const EdgeInsets.all(8.0),
                       child: Card(
                         child:
-                        Image.asset("assets/images/france.png", fit: BoxFit.fill),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>ToursScreen()));
+
+                          },
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Image.asset("assets/images/france.png",  fit: BoxFit.fill),
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                     Padding(
