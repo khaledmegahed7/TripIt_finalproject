@@ -1,9 +1,7 @@
 import 'package:finalproject/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
 import 'custom_color/customcolor.dart';
-
 
 class PageViewController extends StatefulWidget {
   const PageViewController({Key? key}) : super(key: key);

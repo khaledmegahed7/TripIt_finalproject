@@ -4,8 +4,6 @@ import 'package:finalproject/json/Login.dart';
 import 'package:finalproject/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
-
-
 import 'custom_color/customcolor.dart';
 
 

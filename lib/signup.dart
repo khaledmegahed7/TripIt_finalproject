@@ -1,9 +1,7 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
-
-import '../homepageview/locations.dart';
+import 'homepageview/locations.dart';
 import 'custom_color/customcolor.dart';
 import 'json/sign_up.dart';
 import 'sign_in.dart';
@@ -57,7 +55,7 @@ class _SignupState extends State<SignUp> {
                     child: Image.asset("assets/images/BGsignup.png"),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 35, right: 35,),
+                    margin: EdgeInsets.only(left: 35, right: 50,),
                     child: Form(
                       key: formkey,
                       child: Column(
@@ -271,7 +269,7 @@ class _SignupState extends State<SignUp> {
     });
 
     Response loginRespone = await post(
-        Uri.parse("http://alcaptin.com/api/login"),
+        Uri.parse(" http://alcaptin.com/api/register"),
         body: {"first_name": name,
           "last_name": name,
           "email": email,
